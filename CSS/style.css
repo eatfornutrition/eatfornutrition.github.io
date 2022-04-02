@@ -6,6 +6,7 @@
 
 html {
     font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
 }
 
 :root {
@@ -16,6 +17,7 @@ html {
 }
 
 #particles-js {
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #fffb08 100%);
 	height: 100vh; 
 	width: 100%;
     position: fixed;
@@ -24,12 +26,12 @@ html {
 
 header {
     width: 100%;    
-    padding: 10px;
+    padding: 30px;
     height: auto;
 }
 
 header .logo {
-    width: 300px;
+    width: 250px;
 }
 
 main {
@@ -43,37 +45,124 @@ main {
     padding: 10%;
 }
 
+main section {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+} 
 .main-photo {
     width: 90%;
     display: flex;
     justify-content: center;
-    border-radius: 50px;
+    align-self: center;
+    text-align: center;
+    border-radius: 70px;
 }
 
 main img {
-    width: 90%;
-    width: 200px;
+    width:100%;
+    max-width: 300px;
     border-radius: 100px;
+    justify-content: center;
+
 }
 
 .main-photo--title {
-    width: 90%;
+    width: 100%;
     height: auto;
     padding-top: 50px;
+    color: var(--pink);
+    display: flex;
+    flex-direction: column;
+    align-self: center;
     text-align: center;
 }
 
 .main-photo--title h1 {
     font-size: 2.4rem;
     font-weight: bold;
-    line-height: 1.8rem;
-    color: var(--pink)
+    line-height: 2.5rem;
+    
 }
 
 .main-photo--title p {
     margin: 20px 0;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     line-height: 1.8rem;
     font-weight: medium;
-    color: var(--hard-green)
+    color: #201E1C;
 }
+
+.main-photo--button {
+    display: flex;
+    justify-content: center;
+}
+
+.main-photo--button a {
+    margin-top: 35px;
+    padding: 10px;
+    width: 229px;
+    height: 48px;
+    border-radius: 4px;
+    /* Sombra */
+    box-shadow: 0px 4px 8px rgba(49, 40, 17, 0.16);
+    border: none;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.main-photo--button img {
+    margin-left: 5px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+footer {
+    background: #1C1C1E;
+    color: #8B8B8B;
+    padding: 30px;
+    width: 100%;
+    height: auto;
+    display: grid;
+    font-size: 14px;
+    text-align: center;
+    opacity: 90%;
+}
+
+.footer-section {
+    width: 100%;
+}
+
+footer  ul li {
+    text-align: center;
+    display: inline-block;
+    padding: 0 20px;
+    margin-bottom: 10px;
+}
+
+.face {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+    color: #8B8B8B;
+    cursor: pointer;
+}
+
+.inst {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+
