@@ -1,0 +1,39 @@
+.logo {
+    width: 70%;
+
+}
+
+.enlace {
+    position: absolute;
+    padding-left: 20px;
+}
+
+.checkbtn {
+    display: none;
+}
+
+header nav ul {
+    float: right;
+    position: static;
+    width: 50%;
+    height: auto;
+    background: none;
+    margin-right: 20px;
+    list-style: none;
+    left: 0%;
+    text-align: right;
+}
+
+header nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 20px;
+}
+
+.header-nav-item {
+    font-size: 1.8rem;
+}
+
+.header-nav-item:hover {
+    color:#e9e50a;
+}
