@@ -55,3 +55,7 @@ header nav ul li {
 #main3-container--inf p {
     padding: 10px 50px;
 }
+
+.plans-container .isotipo {
+    left: 48%;
+}
