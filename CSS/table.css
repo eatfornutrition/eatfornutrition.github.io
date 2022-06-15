@@ -37,3 +37,7 @@ header nav ul li {
 .header-nav-item:hover {
     color:#e9e50a;
 }
+
+#main3-container--inf p {
+    padding: 10px 50px;
+}

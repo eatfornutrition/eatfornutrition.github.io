@@ -16,18 +16,25 @@ html {
     --hard-green: #838f28;
 }
 
+.main-container {
+    background: linear-gradient(170.8deg, #201E1C 12.69%, #fffb08 100%);
+    position: relative;
+    z-index: -2;
+}
+
 #particles-js {
-    background: linear-gradient(207.8deg, #201E1C 16.69%, #fffb08 100%);
 	height: 109vh; 
 	width: 100%;
     position: absolute;
     z-index: -1;
 }
 
-header {
+.header-logo {
     width: 100%;    
     padding: 30px 0 30px 20px;
     height: auto;
+    display: flex;
+    justify-content: flex-start;
 }
 
 
@@ -89,7 +96,7 @@ nav ul li {
 
 main {
     width: 100%;
-    min-width: 320px;
+    min-width: 300px;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -101,12 +108,13 @@ main {
     width: 100%;
     min-width: 300px;
     height: auto;
-    margin: 15px 20px 60px;
+    margin: 15px auto 60px;
     display: flex;
     flex-direction: column;
     align-self: center;
     padding: 0 20px;
 } 
+
 .main-photo {
     width: 80%;
     /* min-width: 280px; */
@@ -117,12 +125,11 @@ main {
     border-radius: 70px;
 }
 
-main img {
+.main-photo .photo {
     width:100%;
     max-width: 300px;
-    border-radius: 40%;
     justify-content: center;
-
+    border-radius: 40%;
 }
 
 .main-photo--title {
@@ -144,7 +151,7 @@ main img {
 }
 
 .main-photo--title p {
-    margin: 20px 0;
+    margin: 15px 0;
     font-size: 1.5rem;
     line-height: 1.8rem;
     font-weight: 500;
@@ -154,7 +161,7 @@ main img {
 .main-photo--button {
     display: flex;
     justify-content: center;
-    }
+}
 
 .main-photo--button a {
     margin-top: 35px;
@@ -195,7 +202,6 @@ main img {
     min-width: 300px;
     max-width: 900px;
     height: auto;
-    /* padding: 10px 0; */
 }
 
 .main2 h2 {
@@ -203,8 +209,129 @@ main img {
     width: 80%;
     color: var(--soft-green);
     font-weight: 300;
-    
+    line-height: 3rem;
 }
+
+.main3 {
+    width: 100%;
+    height: auto;
+    padding: 60px 0;
+    background: white;
+    display: grid;
+    place-items: center;
+    background: #f5e6d9;
+}
+
+.main3-container {
+    width: 80%;
+    min-width: 300px;
+    max-width: 900px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    border: none;
+    background: white;
+    box-shadow: 0px 4px 8px rgba(49, 40, 17, 0.16);
+}
+
+.main3-container--img {
+    width: 50%;
+    margin-left: 15%;
+}
+
+#main3-container--inf {
+    padding: 15px
+}
+
+#main3-container--inf h2 {
+    color: var(--pink);
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2rem;
+
+}
+
+#main3-container--inf p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: var(--hard-green);
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 2rem;
+}
+
+.plans-container {
+    display: grip;
+    place-items: center;
+    position: relative;
+}
+
+.plans-container .isotipo {
+    width: 50px;
+    position: absolute;
+    top: -25px;
+    left: 48%;
+}
+
+.plans-container h2 {
+    margin-top: 60px;
+    color: var(--hard-green);
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.5rem;
+}
+
+.plans-container p {
+    width: 86%;
+    margin: 15px 7%;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+    color: #757575;
+}
+
+.plans-container ul li {
+    text-align: center;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.network-section {
+    width: 100%;
+    margin: 30px auto 50px;
+}
+
+.wts {
+    padding-top: 5px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.face {
+    padding-bottom: 5px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.inst {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+
 footer {
     background: #1C1C1E;
     color: #8B8B8B;
@@ -214,37 +341,10 @@ footer {
     display: grid;
     font-size: 14px;
     text-align: center;
-    /* opacity: 90%; */
 }
 
-.footer-section {
-    width: 100%;
-}
 
-footer  ul li {
-    text-align: center;
-    display: inline-block;
-    padding: 0 20px;
-    margin-bottom: 10px;
-}
 
-.face {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    width: 25px;
-    height: 25px;
-    color: #8B8B8B;
-    cursor: pointer;
-}
 
-.inst {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    width: 25px;
-    height: 25px;
-    cursor: pointer;
-}
 
 
