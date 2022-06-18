@@ -21,15 +21,13 @@ html {
 }
 .main-container {
     background: linear-gradient(170.8deg, #201E1C 12.69%, #fffb08 100%);
-    position: relative;
-    z-index: -2;
 }
 
 #particles-js {
 	height: 109vh; 
 	width: 100%;
     position: absolute;
-    z-index: -1;
+    
 }
 
 .header-logo {
@@ -116,11 +114,11 @@ main {
     flex-direction: column;
     align-self: center;
     padding: 0 20px;
+    position: relative;
 } 
 
 .main-photo {
     width: 80%;
-    /* min-width: 280px; */
     display: flex;
     justify-content: center;
     align-self: center;
@@ -172,13 +170,20 @@ main {
     width: 229px;
     height: 48px;
     border-radius: 4px;
-    /* Sombra */
-    box-shadow: 0px 4px 8px rgba(49, 40, 17, 0.16);
+    box-shadow: 0px 4px 8px rgba(3, 3, 1, 0.5);
     border: none;
     font-size: 1.6rem;
     font-weight: bold;
     text-decoration: none;
     color: rgb(0, 0, 0);
+    cursor: pointer;   
+}
+
+.main-photo--button a:hover {
+    transition: .5;
+    color: black;
+    background: #eeeb27;
+    opacity: 90%;
 }
 
 .main-photo--button img {
@@ -198,6 +203,7 @@ main {
     display: grid;
     place-items: center;
     padding: 60px 0;
+    position: relative;
 }
 
 .main2 video {
