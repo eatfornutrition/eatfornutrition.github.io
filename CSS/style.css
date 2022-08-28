@@ -59,7 +59,6 @@ main {
     flex-direction: column;
     align-self: center;
     text-align: center;
-    opacity: 30%;
 }
 
 .main1 {
@@ -165,6 +164,7 @@ main {
     height: auto;
     background: #1C1C1E;
     padding: 60px 0;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.5);
 }
 
 .main2 h3 {
@@ -197,16 +197,63 @@ main {
     line-height: 3rem;
 }
 
+.main-ad {
+    width: 100%;
+    height: auto;
+    padding: 60px 0; 
+    color: #1C1C1E;
+    position: relative;
+}
+
+.backgroundAd {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.ad-info {
+    text-align: center;
+}
+.main-ad h2 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+
+.main-ad p {
+margin-top: 20px;
+margin-bottom: 30px;
+font-size: 2rem;
+}
+
+
+.main-ad a {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: black;
+    background-color: #ff9900;
+    padding: 5px 40px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(3, 3, 1, 0.5);
+}
+
+.main-ad a:hover {
+    color: #ff9900;
+    background-color: #131a22;
+}
+
+
+
+
 .main3 {
     width: 100%;
     height: auto;
     padding: 60px 0;
-    background: white;
     background: #f5e6d9;
 }
 
 
-.main3 h3 {
+.main3 h3, .main-ad h3 {
     color: #5a5757;
     text-align: start;
     padding-left: 10%;
@@ -410,11 +457,6 @@ footer a:hover {
     padding: 5px 15px;
     border-radius: 5px;
 }
-
-.inactive {
-    display: none;
-}
-
 
 @media screen and (min-width: 480px){
     .ad img {
