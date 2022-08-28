@@ -26,6 +26,14 @@
     left: 48%;
 }
 
+.backgroundAd {
+    display: block;
+    width: 300px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
 .ad {
     width: 900px;
     left: calc(50% - 450px);
